@@ -28,3 +28,15 @@ https://github.com/user-attachments/assets/8a1d0eba-cc29-48ca-94f5-a6cea649689d
 
 https://github.com/user-attachments/assets/f5f02bc5-1c5c-4cd9-9416-bb171edd75c7
 
+## Snare
+
+https://github.com/user-attachments/assets/fc789001-2fec-467f-8536-c543fe4f23be
+
+https://github.com/user-attachments/assets/b8f3fddc-b324-4986-80c6-8f0965ac2c88
+
+https://github.com/user-attachments/assets/0fc0b289-6813-46c3-94bd-e801d707534f
+
+https://github.com/user-attachments/assets/d3a4b229-1c31-46af-8d74-e37f0bc17027
+
+https://github.com/user-attachments/assets/f0afe392-6268-403f-8d93-0ae90869dd18
+

@@ -16,3 +16,15 @@ https://github.com/user-attachments/assets/db35014d-eb08-4216-9c7d-453be02e89ea
 
 https://github.com/user-attachments/assets/0b063694-c6e9-4761-a248-946abca29539
 
+## Synth
+
+https://github.com/user-attachments/assets/489d9450-d002-4a8a-82a7-8e332182e16a
+
+https://github.com/user-attachments/assets/83739632-88aa-4916-860f-8f1ce7bc63ab
+
+https://github.com/user-attachments/assets/cf9ff98d-6287-40bf-b2cc-cf822acf8e4e
+
+https://github.com/user-attachments/assets/8a1d0eba-cc29-48ca-94f5-a6cea649689d
+
+https://github.com/user-attachments/assets/f5f02bc5-1c5c-4cd9-9416-bb171edd75c7
+

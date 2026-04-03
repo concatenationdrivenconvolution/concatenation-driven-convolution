@@ -1,14 +1,22 @@
 # A Unified Framework for Real-Time Concatenation-Driven Convolution
 
-This repository contains supplimentary submission materials for A Unified Framework for Real-Time Concatenation-Driven Convolution.
+Supplementary materials for *A Unified Framework for Real-Time Concatenation-Driven Convolution*, submitted to DAFx26.
 
-<img width="3067" height="1745" alt="GUI-Anonymous" src="https://github.com/user-attachments/assets/db03e847-f540-4d06-9e28-799173fb993b" />
+## Overview
 
-![Diagram](https://github.com/user-attachments/assets/a6cbd7dd-b553-4f40-899f-cff6af819246)
+The Concatenation-Driven Convolution (CDC) framework unifies concatenative synthesis and real-time convolution into a single audio processing architecture. A corpus of audio segments is organized via a self-organizing map (SOM) and navigated through user gestures, generating continuously evolving impulse responses that are injected directly into a partitioned convolution engine with frequency-domain kernel interpolation.
 
-# Audio Samples
+![Architecture](https://github.com/user-attachments/assets/a6cbd7dd-b553-4f40-899f-cff6af819246)
 
-## Piano
+<img width="3067" height="1745" alt="GUI" src="https://github.com/user-attachments/assets/db03e847-f540-4d06-9e28-799173fb993b" />
+
+## Audio Examples
+
+Each input source (piano, synth, snare) is convolved with five different corpora: measured impulse responses, water recordings, struck metals, vocal textures, and plastics. These demonstrate the range of the framework — from conventional reverb design to timbral processing and cross-synthesis.
+
+> For a better listening experience, visit the [audio examples page](https://concatenationdrivenconvolution.github.io/concatenation-driven-convolution/).
+
+### Piano
 
 https://github.com/user-attachments/assets/f417fa48-bf74-4b44-8bcc-f1aa12fdefaf
 
@@ -20,7 +28,7 @@ https://github.com/user-attachments/assets/db35014d-eb08-4216-9c7d-453be02e89ea
 
 https://github.com/user-attachments/assets/0b063694-c6e9-4761-a248-946abca29539
 
-## Synth
+### Synth
 
 https://github.com/user-attachments/assets/489d9450-d002-4a8a-82a7-8e332182e16a
 
@@ -32,7 +40,7 @@ https://github.com/user-attachments/assets/8a1d0eba-cc29-48ca-94f5-a6cea649689d
 
 https://github.com/user-attachments/assets/f5f02bc5-1c5c-4cd9-9416-bb171edd75c7
 
-## Snare
+### Snare
 
 https://github.com/user-attachments/assets/fc789001-2fec-467f-8536-c543fe4f23be
 
@@ -44,3 +52,6 @@ https://github.com/user-attachments/assets/d3a4b229-1c31-46af-8d74-e37f0bc17027
 
 https://github.com/user-attachments/assets/f0afe392-6268-403f-8d93-0ae90869dd18
 
+## Evaluation Data
+
+The `tests/` directory contains raw CSV data and visualization plots from the comparative evaluation (CPU performance and RMS energy stability) described in the paper.

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Framework — Audio Examples</title>
+    <style>
+        :root {
+            --bg: #1a1a2e;
+            --surface: #16213e;
+            --border: #0f3460;
+            --text: #e0e0e0;
+            --text-muted: #a0a0b0;
+            --accent: #e94560;
+            --accent-dim: #533a7d;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: min(1500px, 90vw);
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .description {
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            font-size: 0.9rem;
+            max-width: 720px;
+        }
+
+        .grid-header {
+            display: grid;
+            grid-template-columns: 140px repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+            padding: 0 0.25rem;
+        }
+
+        .grid-header span {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        .grid-header span:first-child {
+            text-align: left;
+        }
+
+        .source-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .source-row {
+            display: grid;
+            grid-template-columns: 140px repeat(5, 1fr);
+            gap: 0.5rem;
+            align-items: center;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem 0.75rem;
+        }
+
+        .source-label {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .audio-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        audio {
+            width: 100%;
+            height: 36px;
+        }
+
+        /* Slim down audio controls for dark theme */
+        audio::-webkit-media-controls-panel {
+            background: var(--surface);
+        }
+
+        .back-link {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .back-link a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 700px) {
+            .grid-header, .source-row {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .grid-header span:first-child {
+                text-align: center;
+            }
+
+            .source-label {
+                margin-bottom: 0.5rem;
+            }
+
+            .audio-cell::before {
+                content: attr(data-corpus);
+                font-size: 0.7rem;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                margin-bottom: 0.25rem;
+            }
+
+            .grid-header {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A Unified Framework for Real-Time Concatenation-Driven Convolution</h1>
+        <p class="subtitle">Audio Examples</p>
+        <p class="description">
+            Each input source is convolved with five different corpora (measured impulse responses, water recordings, struck metals, vocal textures, and plastics) demonstrating the range of the CDC framework from conventional reverb design to timbral processing and cross-synthesis.
+        </p>
+
+        <div class="grid-header">
+            <span>Source</span>
+            <span>Impulses</span>
+            <span>Water</span>
+            <span>Metal</span>
+            <span>Vocals</span>
+            <span>Plastics</span>
+        </div>
+
+        <div class="source-section">
+            <div class="source-row">
+                <div class="source-label">Piano</div>
+                <div class="audio-cell" data-corpus="Impulses">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/piano/PianoImpulses.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Water">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/piano/PianoWater.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Metal">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/piano/PianoMetal.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Vocals">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/piano/PianoVocals.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Plastics">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/piano/PianoPlastics.wav"></audio>
+                </div>
+            </div>
+        </div>
+
+        <div class="source-section">
+            <div class="source-row">
+                <div class="source-label">Synth</div>
+                <div class="audio-cell" data-corpus="Impulses">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/synth/SynthImpulses.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Water">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/synth/SynthWater.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Metal">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/synth/SynthMetal.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Vocals">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/synth/SynthVocals.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Plastics">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/synth/SynthPlastics.wav"></audio>
+                </div>
+            </div>
+        </div>
+
+        <div class="source-section">
+            <div class="source-row">
+                <div class="source-label">Snare</div>
+                <div class="audio-cell" data-corpus="Impulses">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/snare/SnareImpulses.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Water">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/snare/SnareWater.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Metal">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/snare/SnareMetal.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Vocals">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/snare/SnareVocals.wav"></audio>
+                </div>
+                <div class="audio-cell" data-corpus="Plastics">
+                    <audio controls preload="none" src="https://raw.githubusercontent.com/concatenationdrivenconvolution/concatenation-driven-convolution/main/audio-samples/snare/SnarePlastics.wav"></audio>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-link">
+            <a href="https://github.com/concatenationdrivenconvolution/concatenation-driven-convolution">Back to Repository</a>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('audio').forEach(player => {
+            player.addEventListener('play', () => {
+                document.querySelectorAll('audio').forEach(other => {
+                    if (other !== player) other.pause();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

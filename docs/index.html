@@ -35,10 +35,26 @@
             margin-bottom: 0.5rem;
         }
 
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
         .subtitle {
             color: var(--text-muted);
             margin-bottom: 2rem;
             font-size: 0.95rem;
+        }
+
+        .figures {
+            margin-bottom: 2.5rem;
+        }
+
+        .figures img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 1rem;
         }
 
         .description {
@@ -158,7 +174,14 @@
 <body>
     <div class="container">
         <h1>A Unified Framework for Real-Time Concatenation-Driven Convolution</h1>
-        <p class="subtitle">Audio Examples</p>
+        <p class="subtitle">Audio Examples and Supplementary Materials</p>
+
+        <div class="figures">
+            <img src="https://github.com/user-attachments/assets/a6cbd7dd-b553-4f40-899f-cff6af819246" alt="CDC Architecture Diagram" />
+            <img src="https://github.com/user-attachments/assets/db03e847-f540-4d06-9e28-799173fb993b" alt="CDC Plugin Interface" />
+        </div>
+
+        <h2>Audio Examples</h2>
         <p class="description">
             Each input source is convolved with five different corpora (measured impulse responses, water recordings, struck metals, vocal textures, and plastics) demonstrating the range of the CDC framework from conventional reverb design to timbral processing and cross-synthesis.
         </p>

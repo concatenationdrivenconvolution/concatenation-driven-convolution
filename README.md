@@ -2,6 +2,10 @@
 
 This repository contains supplimentary submission materials for A Unified Framework for Real-Time Concatenation-Driven Convolution.
 
+<img width="3067" height="1745" alt="GUI-Anonymous" src="https://github.com/user-attachments/assets/db03e847-f540-4d06-9e28-799173fb993b" />
+
+![Diagram](https://github.com/user-attachments/assets/a6cbd7dd-b553-4f40-899f-cff6af819246)
+
 # Audio Samples
 
 ## Piano

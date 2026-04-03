@@ -6,13 +6,13 @@
     <title>CDC Framework — Audio Examples</title>
     <style>
         :root {
-            --bg: #1a1a2e;
-            --surface: #16213e;
-            --border: #0f3460;
-            --text: #e0e0e0;
-            --text-muted: #a0a0b0;
-            --accent: #e94560;
-            --accent-dim: #533a7d;
+            --bg: #3a3a4a;
+            --surface: #4a4a5c;
+            --border: #5a5a6c;
+            --text: #d8d8dc;
+            --text-muted: #9a9aaa;
+            --accent: #e07088;
+            --accent-dim: #8a6a80;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -98,11 +98,17 @@
         audio {
             width: 100%;
             height: 36px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
         }
 
-        /* Slim down audio controls for dark theme */
-        audio::-webkit-media-controls-panel {
+        audio::-webkit-media-controls-enclosure {
             background: var(--surface);
+        }
+
+        audio::-webkit-media-controls-panel {
+            filter: invert(1);
+            background: transparent;
         }
 
         .back-link {

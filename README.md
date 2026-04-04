@@ -10,11 +10,19 @@ The Concatenation-Driven Convolution (CDC) framework unifies concatenative synth
 
 <img width="3067" height="1745" alt="GUI" src="https://github.com/user-attachments/assets/db03e847-f540-4d06-9e28-799173fb993b" />
 
+&nbsp;
+
+> For the best viewing and listening experience, visit the [supplementary materials page](https://concatenationdrivenconvolution.github.io/concatenation-driven-convolution/).
+
+## Demo
+
+Live exploration of several corpora with guitar input, showing real-time SOM navigation and continuous IR morphing.
+
+[![Demo Video](https://img.youtube.com/vi/H5r1GEx5O_I/maxresdefault.jpg)](https://www.youtube.com/watch?v=H5r1GEx5O_I)
+
 ## Audio Examples
 
 Each input source (piano, synth, snare) is convolved with five different corpora: measured impulse responses, water recordings, struck metals, vocal textures, and plastics. These demonstrate the range of the framework — from conventional reverb design to timbral processing and cross-synthesis.
-
-> For a better listening experience, visit the [audio examples page](https://concatenationdrivenconvolution.github.io/concatenation-driven-convolution/).
 
 ### Piano
 

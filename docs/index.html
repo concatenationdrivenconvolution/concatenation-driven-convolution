@@ -57,6 +57,23 @@
             margin-bottom: 1rem;
         }
 
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 */
+            margin-bottom: 2.5rem;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
         .description {
             color: var(--text-muted);
             margin-bottom: 2.5rem;
@@ -179,6 +196,14 @@
         <div class="figures">
             <img src="https://github.com/user-attachments/assets/a6cbd7dd-b553-4f40-899f-cff6af819246" alt="CDC Architecture Diagram" />
             <img src="https://github.com/user-attachments/assets/db03e847-f540-4d06-9e28-799173fb993b" alt="CDC Plugin Interface" />
+        </div>
+
+        <h2>Demo</h2>
+        <p class="description">
+            Live exploration of several corpora with guitar input, showing real-time SOM navigation and continuous IR morphing.
+        </p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/H5r1GEx5O_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <h2>Audio Examples</h2>

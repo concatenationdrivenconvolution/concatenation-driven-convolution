@@ -18,7 +18,7 @@ The Concatenation-Driven Convolution (CDC) framework unifies concatenative synth
 
 Live exploration of several corpora with guitar input, showing real-time SOM navigation and continuous IR morphing.
 
-[![Demo Video](https://img.youtube.com/vi/H5r1GEx5O_I/maxresdefault.jpg)](https://www.youtube.com/watch?v=H5r1GEx5O_I)
+[![Demo Video](https://img.youtube.com/vi/H5r1GEx5O_I/maxresdefault.jpg)](https://www.youtube.com/watch?v=0fiPyHIWQw4)
 
 ## Audio Examples
 
